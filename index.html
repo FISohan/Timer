@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div id="startPopup">
+        <div>
+            <input type="number" placeholder="Hours" name="hour" id="hour">
+            <input type="number" placeholder="Minutes" name="mint" id="mint">
+        </div>
+
+        <div>
+            <input type="number" value="120" placeholder="Dollar Rate" name="hour" id="dollarRate">
+            <input type="number" placeholder="Income Rate Per Hour" name="mint" id="incomeRate">
+        </div>
+        <button onclick="start()">Start</button>
+    </div>
+    <div id="timer" >
+        <div id="incomeSection">
+            <h3>
+               Total Income: <span id="income"></span>
+            </h3>
+            <h3>
+                 Income: <span id="incomeR"></span>
+             </h3>
+        </div>
+        <div id="state">
+            <h2>Start After:</h2>
+        </div>
+        <div id="clock">
+            <h2 id="h">00 </h2>
+            <h2>:</h2>
+            <h2 id="m">00 </h2>
+            <h2>:</h2>
+            <h2 id="s">00</h2>
+        </div>
+        <div>
+
+        <button onclick="stopTimer()" id="stopBtn">Pause</button>
+        <button id="startBtn" onclick="startTimer()">Resume</button>
+        <button onclick="resetTimer()" id="resetBtn">Reset</button>
+        
+    </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
